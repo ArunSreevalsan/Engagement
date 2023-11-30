@@ -63,23 +63,6 @@
 	};
 
 
-	var burgerMenu = function() {
-
-		$('body').on('click', '.js-fh5co-nav-toggle', function(event){
-			var $this = $(this);
-
-
-			if ( $('body').hasClass('overflow offcanvas') ) {
-				$('body').removeClass('overflow offcanvas');
-			} else {
-				$('body').addClass('overflow offcanvas');
-			}
-			$this.toggleClass('active');
-			event.preventDefault();
-
-		});
-	};
-
 
 
 	var contentWayPoint = function() {
@@ -218,7 +201,6 @@
 		mobileMenuOutsideClick();
 		parallax();
 		offcanvasMenu();
-		burgerMenu();
 		contentWayPoint();
 		dropdown();
 		testimonialCarousel();
